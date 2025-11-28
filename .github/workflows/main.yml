@@ -12,6 +12,3 @@ jobs:
     steps:
       - name: 'testing github action'
         run: pwd
-      - name: 'Kareem Mohamed abd el baky Mahmoud'
-        run: echo name
-
