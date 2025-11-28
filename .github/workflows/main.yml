@@ -19,3 +19,9 @@ jobs:
         run: ls
       - name: 'login to docker hub'
         run: docker login --username ${{ secrets.DOCKERHUBUSERNAME }} --password ${{ secrets.DOCKERHUBPASSWORD }}
+      - name: 'build docker image'
+        run: docker build -t ${{ secrets.DOCKERHUBUSERNAME }}/myimg .
+      - name: 'push to docker hub'
+        run: docker push ${{ secrets.DOCKERHUBUSERNAME }}/myimg 
+      #- name: 'run image'
+      #  run: docker 
