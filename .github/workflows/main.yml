@@ -17,5 +17,5 @@ jobs:
         run: echo Kareem Mohamed abd el baky Mahmoud
       - name: 'ls'
         run: ls
-        name: 'login to docker hub'
+      - name: 'login to docker hub'
         run: docker login --username ${{ secrets.DOCKERUSERNAME }} --password ${{ secrets.DOCKERPASSWORD }}
