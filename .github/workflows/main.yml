@@ -1,1 +1,17 @@
+on:
+  push:
+    branches:
+      - master
+
+
+
+jobs:
+  build:
+    runs-on: alpine-latest
+
+    steps:
+      - name: 'testing github action'
+        run: pwd
+      - name: 'Kareem Mohamed abd el baky Mahmoud'
+        run: echo name
 
