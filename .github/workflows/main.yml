@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v3
       - name: 'testing github action'
         run: pwd
       - name: 'name'
         run: echo Kareem Mohamed abd el baky Mahmoud
       - name: 'ls'
         run: ls
-      - uses: actions/checkout@v3
-      - name: 'ls'
-        run: ls
+        name: 'login to docker hub'
+        run: docker login --username ${{ secrets.DOCKERUSERNAME }} --password ${{ secrets.DOCKERPASSWORD }}
