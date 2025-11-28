@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: alpine-latest
+    runs-on: windows
 
     steps:
       - name: 'testing github action'
