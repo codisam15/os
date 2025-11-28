@@ -16,3 +16,6 @@ jobs:
         run: echo Kareem Mohamed abd el baky Mahmoud
       - name: 'ls'
         run: ls
+      - uses: actions/checkout@v3
+      - name: 'ls'
+        run: ls
